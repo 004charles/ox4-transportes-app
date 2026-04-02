@@ -81,7 +81,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             _rideInfoItem(Icons.location_on, 'DE:', ride['origem']),
             _rideInfoItem(Icons.flag, 'PARA:', ride['destino']),
             const SizedBox(height: 10),
-            Text('PREÇO: \${ride['preco_estimado']} Kz', style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+            Text('PREÇO: ${ride['preco_estimado']} Kz', style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
             const SizedBox(height: 20),
             Row(
               children: [
