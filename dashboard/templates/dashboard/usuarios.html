@@ -1,0 +1,40 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Gestão de Usuários - OX4{% endblock %}
+
+{% block content %}
+<div class="header"><h1>Lista de Usuários</h1></div>
+
+<div class="card-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome de Usuário</th>
+                <th>Nome Completo</th>
+                <th>Telefone</th>
+                <th>Tipo</th>
+                <th>Data de Adesão</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in usuarios %}
+            <tr>
+                <td>{{ u.username }}</td>
+                <td>{{ u.get_full_name }}</td>
+                <td>{{ u.telefone }}</td>
+                <td>{{ u.tipo }}</td>
+                <td>{{ u.date_joined|date:"d/m/Y H:i" }}</td>
+                <td>
+                    <button class="nav-item" style="display:inline; color: var(--primary); border:none; background:none; cursor:pointer;">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="nav-item" style="display:inline; color: var(--dangerRed); border:none; background:none; cursor:pointer;">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

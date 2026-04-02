@@ -1,0 +1,56 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Gestão de Motoristas - OX4{% endblock %}
+
+{% block content %}
+<div class="header"><h1>Gestão de Motoristas</h1></div>
+        
+        <div class="card-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Veículo</th>
+                        <th>Placa</th>
+                        <th>Documentos</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for m in motoristas %}
+                    <tr>
+                        <td>#{{ m.id }}</td>
+                        <td>{{ m.usuario.first_name }} {{ m.usuario.last_name }}</td>
+                        <td>{{ m.modelo_veiculo }}</td>
+                        <td>{{ m.placa_veiculo }}</td>
+                        <td>
+                            {% if m.foto_documento_id %}
+                                <a href="{{ m.foto_documento_id.url }}" target="_blank" style="color: var(--secondary); font-size: 12px;"><i class="fas fa-id-card"></i> BI</a><br>
+                            {% endif %}
+                            {% if m.foto_carta_conducao %}
+                                <a href="{{ m.foto_carta_conducao.url }}" target="_blank" style="color: var(--secondary); font-size: 12px;"><i class="fas fa-car"></i> Carta</a>
+                            {% endif %}
+                            {% if not m.foto_documento_id and not m.foto_carta_conducao %}
+                                <span style="color: #999; font-size: 12px;">Pendente</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if m.aprovado %}
+                            <span class="status-badge status-concluida">APROVADO</span>
+                            {% else %}
+                            <span class="status-badge status-pendente">PENDENTE</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'dashboard_aprovar' m.id %}" class="nav-item" style="display:inline; color: var(--primary)">
+                                <i class="fas {% if m.aprovado %}fa-times-circle{% else %}fa-check-circle{% endif %}"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

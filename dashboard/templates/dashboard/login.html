@@ -1,0 +1,31 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}Login - OX4 ADM{% endblock %}
+
+{% block content %}
+<div style="height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #003399 0%, #001a4d 100%);">
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 100%; max-width: 400px; text-align: center;">
+        <div style="font-size: 32px; font-weight: 900; color: #003399; margin-bottom: 30px;">
+            <i class="fas fa-shuttle-van"></i> OX4 ADM
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div style="margin-bottom: 20px; text-align: left;">
+                <label style="display: block; margin-bottom: 8px; color: #666;">Usuário</label>
+                <input type="text" name="username" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none;">
+            </div>
+            <div style="margin-bottom: 30px; text-align: left;">
+                <label style="display: block; margin-bottom: 8px; color: #666;">Senha</label>
+                <input type="password" name="password" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none;">
+            </div>
+            {% if error %}
+            <p style="color: #ff4d4d; margin-bottom: 20px;">{{ error }}</p>
+            {% endif %}
+            <button type="submit" style="width: 100%; padding: 14px; background: #003399; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;">
+                ENTRAR NO PAINEL
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

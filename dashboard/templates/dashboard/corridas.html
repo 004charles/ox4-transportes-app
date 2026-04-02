@@ -1,0 +1,37 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Gestão de Corridas - OX4{% endblock %}
+
+{% block content %}
+<div class="header"><h1>Histórico de Corridas</h1></div>
+
+<div class="card-table">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Passageiro</th>
+                <th>Motorista</th>
+                <th>De</th>
+                <th>Para</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in corridas %}
+            <tr>
+                <td>#{{ c.id }}</td>
+                <td>{{ c.passageiro.get_full_name }}</td>
+                <td>{{ c.motorista.usuario.get_full_name|default:"Aguardando" }}</td>
+                <td>{{ c.origem_endereco }}</td>
+                <td>{{ c.destino_endereco }}</td>
+                <td>{{ c.preco_estimado }} Kz</td>
+                <td>{{ c.data_criacao|date:"d/m/Y H:i" }}</td>
+                <td><span class="status-badge status-{{ c.status|lower }}">{{ c.status }}</span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

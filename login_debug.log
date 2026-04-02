@@ -1,0 +1,223 @@
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 900000000
+Senha Recebida (tamanho): 10
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['900000000'], 'password': ['ox4pass123']}>
+Usuário encontrado! Username: 900000000
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923906060
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923906060'], 'password': ['1234']}>
+Usuário encontrado! Username: 923906060
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 923908353
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['923908353'], 'password': ['1234']}>
+Usuário encontrado! Username: 923908353
+Falha na autenticação (senha incorreta?)
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: muquissi 
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['muquissi '], 'password': ['1234']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: muquissi 
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['muquissi '], 'password': ['1234']}>
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: muquissi 
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['muquissi '], 'password': ['1234']}>
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: muquissi 
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['muquissi '], 'password': ['1234']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: muquissi 
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['muquissi '], 'password': ['1234']}>
+Usuário NÃO encontrado com o ID fornecido.
+Usuário NÃO encontrado com o ID fornecido.
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 
+Senha Recebida (tamanho): 0
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': [''], 'password': ['']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 
+Senha Recebida (tamanho): 0
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': [''], 'password': ['']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 
+Senha Recebida (tamanho): 0
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': [''], 'password': ['']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 
+Senha Recebida (tamanho): 0
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': [''], 'password': ['']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 
+Senha Recebida (tamanho): 0
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': [''], 'password': ['']}>
+Usuário NÃO encontrado com o ID fornecido.
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950
+
+--- TENTATIVA DE LOGIN ---
+ID Recebido: 956302950
+Senha Recebida (tamanho): 4
+Content-Type: application/x-www-form-urlencoded
+Data: <QueryDict: {'username': ['956302950'], 'password': ['1234']}>
+Usuário encontrado! Username: 956302950

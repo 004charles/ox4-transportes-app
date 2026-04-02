@@ -1,0 +1,65 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Dashboard - OX4{% endblock %}
+
+{% block content %}
+<div class="header">
+    <h1>Visão Geral</h1>
+    <div class="user-info">
+        <span>Bem-vindo, <strong>{{ user.first_name|default:user.username }}</strong></span>
+        <i class="fas fa-user-circle fa-2x ml-3" style="color: var(--primary)"></i>
+    </div>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <span class="label">Total de Usuários</span>
+        <span class="value">{{ total_usuarios }}</span>
+    </div>
+    <div class="stat-card">
+        <span class="label">Motoristas Parceiros</span>
+        <span class="value">{{ total_motoristas }}</span>
+    </div>
+    <div class="stat-card">
+        <span class="label">Corridas Solicidatas</span>
+        <span class="value">{{ total_corridas }}</span>
+    </div>
+    <div class="stat-card">
+        <span class="label">Ganhos Totais (Kz)</span>
+        <span class="value">{{ ganhos_totais }}</span>
+    </div>
+</div>
+
+<div class="card-table">
+    <div class="card-title">Últimas Corridas</div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Passageiro</th>
+                <th>Motorista</th>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th>Preço</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for corrida in corridas_recentes %}
+            <tr>
+                <td>#{{ corrida.id }}</td>
+                <td>{{ corrida.passageiro.first_name }}</td>
+                <td>{{ corrida.motorista.usuario.first_name|default:"-" }}</td>
+                <td>{{ corrida.origem_endereco }}</td>
+                <td>{{ corrida.destino_endereco }}</td>
+                <td>{{ corrida.preco_estimado }} Kz</td>
+                <td><span class="status-badge status-{{ corrida.status|lower }}">{{ corrida.status }}</span></td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7" style="text-align: center; color: var(--text-gray)">Nenhuma corrida registrada ainda.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

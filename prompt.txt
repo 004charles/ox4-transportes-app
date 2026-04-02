@@ -1,0 +1,56 @@
+Crie um sistema completo de aplicativo de táxi semelhante ao Uber, utilizando uma arquitetura moderna e escalável com as seguintes tecnologias e requisitos:
+
+🔧 Backend:
+
+* Utilize Django com Django Rest Framework para construção da API
+* Use PostgreSQL como banco de dados principal
+* O backend deve ser responsável por toda a lógica de negócio, incluindo:
+
+  * Cadastro e autenticação de usuários (motorista e passageiro)
+  * Criação, aceitação e finalização de corridas
+  * Cálculo de tarifas
+  * Histórico de viagens
+  * Sistema de avaliações
+  * Gestão de pagamentos
+
+⚡ Realtime:
+
+* Utilize Firebase exclusivamente para funcionalidades em tempo real
+* Implementar:
+
+  * Atualização de localização dos motoristas em tempo real
+  * Status da corrida (procurando motorista, aceito, em andamento, finalizado)
+  * Notificações em tempo real para passageiros e motoristas
+* O Firebase NÃO deve conter lógica de negócio crítica, apenas sincronização e eventos
+
+📱 Aplicativo Mobile:
+
+* Desenvolver utilizando Flutter
+* O app deve ter duas interfaces:
+
+  * Passageiro
+  * Motorista
+* Funcionalidades:
+
+  * Mapa em tempo real com localização (integração com Google Maps)
+  * Solicitação de corrida
+  * Aceitação de corrida
+  * Navegação até o destino
+  * Exibição do motorista no mapa
+  * Notificações em tempo real
+
+🔐 Integração:
+
+* Django deve enviar e sincronizar dados com Firebase
+* Garantir consistência entre banco de dados principal e dados em tempo real
+* Implementar autenticação segura (JWT ou similar)
+
+🧠 Requisitos técnicos:
+
+* Arquitetura limpa e escalável
+* Separação clara entre backend (lógica) e realtime (Firebase)
+* Código organizado e documentado
+* Preparado para escalar (muitos usuários simultâneos)
+
+🎯 Objetivo:
+Criar uma base sólida para um aplicativo de transporte funcional, eficiente e pronto para crescimento, seguindo boas práticas de engenharia de software.

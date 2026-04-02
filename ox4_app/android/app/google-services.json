@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876005832344",
+    "project_id": "ox4-app",
+    "storage_bucket": "ox4-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876005832344:android:62e9df0ee89f75b05242ed",
+        "android_client_info": {
+          "package_name": "com.example.ox4_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPqhgjZpe1YBb2yuKPa4nryBys3vi_gC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}OX4 ADM{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dashboard/css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <div class="sidebar">
+        <div class="logo"><i class="fas fa-shuttle-van"></i> OX4 ADM</div>
+        <nav>
+            <a href="{% url 'dashboard_index' %}" class="nav-item {% if request.resolver_match.url_name == 'dashboard_index' %}active{% endif %}">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="{% url 'dashboard_usuarios' %}" class="nav-item {% if request.resolver_match.url_name == 'dashboard_usuarios' %}active{% endif %}">
+                <i class="fas fa-users"></i> Usuários
+            </a>
+            <a href="{% url 'dashboard_motoristas' %}" class="nav-item {% if request.resolver_match.url_name == 'dashboard_motoristas' %}active{% endif %}">
+                <i class="fas fa-steering-wheel"></i> Motoristas
+            </a>
+            <a href="{% url 'dashboard_corridas' %}" class="nav-item {% if request.resolver_match.url_name == 'dashboard_corridas' %}active{% endif %}">
+                <i class="fas fa-route"></i> Corridas
+            </a>
+            <a href="{% url 'dashboard_logout' %}" class="nav-item" style="margin-top: auto; color: #ff4d4d">
+                <i class="fas fa-sign-out-alt"></i> Sair
+            </a>
+        </nav>
+    </div>
+    {% endif %}
+
+    <div class="main-content" style="{% if not user.is_authenticated %}margin: 0; padding: 0; width: 100%{% endif %}">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
